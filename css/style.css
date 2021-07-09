@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* 共通部分
+--------------------------------------*/
+html {
+	font-size: 100%;
+}
+p {
+	font-size: 20px;
+}
+
+header {
+	width: auto;
+	height: auto;
+}
+main div {
+	width: 30%;
+}
+main {
+	text-align: center;
+	height: 500px;
+}
+
+body {
+	 /*デフォルトのフォント設定*/
+	font-family: "07やさしさアンチック";
+}
+
+.main-nav {
+	/*サイトの左上に配置、リストを横並びにする*/
+	display: flex;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+.main-nav li {
+	/*左間隔を空ける*/
+	margin-left: 53px;
+	margin-top: 20px;
+}
+
+.main-nav a {
+	font-size: 30px;
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+	border-radius: 50%;
+	text-align: center;
+	overflow: hidden;
+}
+/*ヘッダーボタンカーソル乗せた時の動き設定*/
+.main-nav a:hover{
+	color: #D6A3D0;
+}
+.page-header {
+	/*横並びにする*/
+	display: flex;
+	/*左右に間を入れる*/
+	justify-content: space-between;
+}
+.wrapper {
+	font-family: "コーポレート・ロゴＢ";
+}
+/*ヘッダー設定*/
+.home-content {
+	text-align: center;
+	margin-top: 10%;
+	letter-spacing: 0.9em
+}
+
+.home-content p {
+	padding-top: 10px; 
+}
+
+
+/*画面内に入った状態*/
+.fadein.scrollin {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+#content{
+	width: 398px;
+	margin-top: 70px;
+	margin-right: 10px; 
+}
+/* 大きな背景画像*/
+.big-bg{
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;   
+	height: 100vh;
+}
+#home {
+	background-image: url(../images/snowfall-201496_1920.jpg);
+	width:100%;
+}
+
+/*メインコンテンツ設定*/
+
+/*スクロールすることでゆっくり表示、画面外にいる状態*/
+.fadein {
+	opacity: 0.1;
+	transform: translate(0, 50px);
+	transition: all 500ms;
+}
+
+
+
+/*画面内に入った状態*/
+.fadein.scrollin {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+/* 文字設定*/
+h2 {
+	font-size: 60px;
+}
+
+/* フッター*/
+footer {
+	background: #F4E9F2;
+	text-align: center;
+	padding: 50px 0;
+}
+
+
